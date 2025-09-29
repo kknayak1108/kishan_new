@@ -32,7 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          a=$Input_value
+          a=${{ vars.Input_value }}
           if [ $((a % 2)) -eq 0 ];then
            echo "even"
           else
